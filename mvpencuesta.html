@@ -281,7 +281,7 @@ function showEnd(type){
 function submit(){
   responses._timestamp = new Date().toISOString();
   responses._completed = true;
-  const ENDPOINT='https://script.google.com/macros/s/AKfycbyrfIuf2gfQ7Q8-pwx6VakM8rFz9_a_oR3MVtF646_KjyudBfJQ2G0jxh3mbejx94cCJw/exec';fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(responses)});
+  const ENDPOINT='https://script.google.com/macros/s/AKfycbwpC4Akz24XDc1MzUVofVRxrhRNHmk9QrsPN7-ZH6t_af71ynrldcnWO2R7rDEbuthA1Q/exec';fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(responses)});
   showEnd('completada');
 }
 
